@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Network of robots coordinating tasks around a home node">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".5" r=".8">
+      <stop offset="0" stop-color="#1b2a55"/>
+      <stop offset="1" stop-color="#0a1128"/>
+    </radialGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffc857" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#ffc857" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+
+  <!-- graph edges -->
+  <g stroke="#6c97ff" stroke-opacity=".45" stroke-width="2" fill="none">
+    <line x1="320" y1="180" x2="150" y2="95"/>
+    <line x1="320" y1="180" x2="150" y2="265"/>
+    <line x1="320" y1="180" x2="500" y2="90"/>
+    <line x1="320" y1="180" x2="505" y2="270"/>
+    <line x1="150" y1="95" x2="90" y2="185"/>
+    <line x1="150" y1="265" x2="90" y2="185"/>
+    <line x1="500" y1="90" x2="560" y2="180"/>
+    <line x1="505" y1="270" x2="560" y2="180"/>
+    <line x1="150" y1="95" x2="260" y2="45"/>
+    <line x1="500" y1="90" x2="400" y2="45"/>
+    <line x1="150" y1="265" x2="255" y2="320"/>
+    <line x1="505" y1="270" x2="405" y2="320"/>
+  </g>
+
+  <!-- return paths to home -->
+  <g stroke="#ffc857" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round" fill="none">
+    <path d="M90 185 C 160 160, 240 190, 300 180"/>
+    <path d="M560 180 C 480 205, 400 170, 340 180"/>
+    <path d="M260 45 C 280 100, 305 140, 316 162"/>
+    <path d="M255 320 C 285 260, 305 215, 316 198"/>
+  </g>
+
+  <!-- task nodes -->
+  <g fill="#3ddbc0">
+    <polygon points="260,35 270,45 260,55 250,45"/>
+    <polygon points="400,35 410,45 400,55 390,45"/>
+    <polygon points="255,310 265,320 255,330 245,320"/>
+    <polygon points="405,310 415,320 405,330 395,320"/>
+  </g>
+
+  <!-- robots -->
+  <g fill="#6c97ff" stroke="#e8efff" stroke-width="3">
+    <circle cx="150" cy="95" r="17"/>
+    <circle cx="150" cy="265" r="17"/>
+    <circle cx="500" cy="90" r="17"/>
+    <circle cx="505" cy="270" r="17"/>
+    <circle cx="90" cy="185" r="17"/>
+    <circle cx="560" cy="180" r="17"/>
+  </g>
+  <g fill="#e8efff">
+    <circle cx="150" cy="95" r="5"/><circle cx="150" cy="265" r="5"/><circle cx="500" cy="90" r="5"/>
+    <circle cx="505" cy="270" r="5"/><circle cx="90" cy="185" r="5"/><circle cx="560" cy="180" r="5"/>
+  </g>
+
+  <!-- home / desired state -->
+  <circle cx="320" cy="180" r="70" fill="url(#glow)"/>
+  <circle cx="320" cy="180" r="24" fill="#ffc857" stroke="#fff6dc" stroke-width="3"/>
+  <circle cx="320" cy="180" r="9" fill="#0a1128"/>
+</svg>

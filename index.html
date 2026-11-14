@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francisco Castellano · Robotics Engineer</title>
+  <meta name="description" content="Francisco — design and development of autonomous robotic systems. Portfolio of projects and skills.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Francisco</a>
+    <nav class="menu">
+      <a class="hide-sm" href="#projects"><span class="en">Projects</span><span class="es">Proyectos</span></a>
+      <a class="hide-sm" href="#skills"><span class="en">Skills</span><span class="es">Competencias</span></a>
+      <a class="hide-sm" href="#experience"><span class="en">Experience</span><span class="es">Experiencia</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
+      <button class="lang-btn" id="lang-btn" type="button" aria-label="Change language / Cambiar idioma">ES</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PORTADA ============ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>
+      <span class="en">Hi, I'm Francisco.</span>
+      <span class="es">Hola, soy Francisco.</span>
+    </h1>
+    <p class="lead">
+      <span class="en">I design and develop autonomous robotic systems. What drives me is to keep learning, tackle complex technical problems and turn ideas into real systems.</span>
+      <span class="es">Diseño y desarrollo sistemas robóticos autónomos. Mi principal motivación es seguir aprendiendo, afrontar problemas técnicos complejos y convertir ideas en sistemas reales.</span>
+    </p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">ROS 2</span>
+      <span class="tag">Reinforcement Learning</span>
+      <span class="tag">Embedded Systems</span>
+    </div>
+    <div class="buttons">
+      <a class="btn primary" href="#projects"><span class="en">See projects</span><span class="es">Ver proyectos</span></a>
+      <a class="btn" href="#contact"><span class="en">Get in touch</span><span class="es">Contactar</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <h2><span class="en">Featured projects</span><span class="es">Proyectos destacados</span></h2>
+    <div class="cards">
+
+      <div class="card">
+        <img class="shot" src="images/humanoid.svg" alt="Walker body transferring its walking policy to a humanoid">
+        <div class="body">
+          <h3><span class="en">Humanoid control</span><span class="es">Control de humanoides</span></h3>
+          <p class="meta">Reinforcement Learning · Behavioral Cloning · MuJoCo</p>
+          <p class="desc"><span class="en">Learning to walk across different body shapes. A policy is first trained on a simple two-legged body, the Walker in MuJoCo; the humanoid then imitates it, using progressive imitation learning and behavioral cloning, and learns to walk with minimal training iterations.</span><span class="es">Aprender a caminar entre cuerpos de distinta forma. Primero se entrena una política en un cuerpo simple de dos patas, el Walker de MuJoCo; después el humanoide la imita, con aprendizaje por imitación progresivo y behavioral cloning, y aprende a caminar con muy pocas iteraciones de entrenamiento.</span></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="shot" src="images/coordination.svg" alt="Network of robots coordinating tasks around a home node">
+        <div class="body">
+          <h3><span class="en">Multi-robot mission coordination</span><span class="es">Coordinación multirobot de misiones</span></h3>
+          <p class="meta"><span class="en">Multi-robot coordination · Planning · Navigation</span><span class="es">Coordinación multi-robot · Planificación · Navegación</span></p>
+          <p class="desc"><span class="en">Cooperation and coordination of multiple robots: task planning and navigation. Control is kept simple; the core is a bio-inspired algorithm built on a continuous latent space and a dynamic graph. It optimises the tasks so that the system returns to its desired state, with no pending tasks, in optimal time and energy.</span><span class="es">Cooperación y coordinación de varios robots: planificación de tareas y navegación. El control es simple; el núcleo es un algoritmo de inspiración biológica basado en un espacio latente continuo y un grafo dinámico. Optimiza las tareas para que el sistema vuelva a su estado deseado, sin tareas pendientes, en tiempo y energía óptimos.</span></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="shot" src="images/modubot.svg" alt="Modular robot connected over WiFi to a web app">
+        <div class="body">
+          <h3>ModuBot</h3>
+          <p class="meta"><span class="en">Modular architecture · ESP32 · Firmware · Web</span><span class="es">Arquitectura modular · ESP32 · Firmware · Web</span></p>
+          <p class="desc"><span class="en">Personal hardware–software integration project: a modular robot whose software is flashed onto it. You connect over WiFi to the app it serves and control it from there. Underneath, the firmware includes preprogrammed routines that you can run on the robot.</span><span class="es">Proyecto personal de integración hardware-software: un robot modular con un software que se flashea en él. Te conectas por WiFi a la app que sirve el propio robot y lo controlas desde ahí. Por debajo, el firmware incluye rutinas preprogramadas que puedes ejecutar en el robot.</span></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="shot" src="images/coral.svg" alt="Underwater scene with a starfish detected by a bounding box and a tracking trail">
+        <div class="body">
+          <h3><span class="en">Coral reef pest detection</span><span class="es">Detección de plagas en arrecifes de coral</span></h3>
+          <p class="meta">Computer Vision · YOLO · Kalman filter</p>
+          <p class="desc"><span class="en">Early detection of crown-of-thorns starfish, a pest that devours coral on Australia's Great Barrier Reef. A vision algorithm combining YOLO with Kalman filters to analyse underwater video.</span><span class="es">Detección temprana de la estrella de mar corona de espinas, una plaga que devora el coral en la Gran Barrera de Coral de Australia. Algoritmo de visión que combina YOLO con filtros de Kalman para analizar vídeo submarino.</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPETENCIAS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <h2><span class="en">Technical skills</span><span class="es">Competencias técnicas</span></h2>
+    <div class="skills">
+      <div class="skill-box">
+        <h3><span class="en">Robotics &amp; control</span><span class="es">Robótica y control</span></h3>
+        <ul><li>ROS 2</li><li>MPC</li><li>PID</li><li>Kalman filter</li><li>MATLAB / Simulink</li><li>RL</li></ul>
+      </div>
+      <div class="skill-box">
+        <h3><span class="en">Programming &amp; AI</span><span class="es">Programación e inteligencia artificial</span></h3>
+        <ul><li>Python</li><li>YOLO</li><li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>SQL</li></ul>
+      </div>
+      <div class="skill-box">
+        <h3><span class="en">Development &amp; systems</span><span class="es">Desarrollo y sistemas</span></h3>
+        <ul><li>Git</li><li>Docker</li><li>ESP32</li><li>PLC</li><li>RAPID</li></ul>
+      </div>
+      <div class="skill-box">
+        <h3><span class="en">Communications</span><span class="es">Comunicaciones</span></h3>
+        <ul><li>MQTT</li><li>TCP/IP</li><li>UDP</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIA Y FORMACIÓN ============ -->
+<section id="experience">
+  <div class="wrap">
+    <h2><span class="en">Experience &amp; education</span><span class="es">Experiencia y formación</span></h2>
+
+    <div class="item">
+      <h3>GMV — <span class="en">Master's Thesis Internship</span><span class="es">Prácticas del TFM</span></h3>
+      <p class="when"><span class="en">July 2026 – present · Tres Cantos, Spain</span><span class="es">Julio 2026 – actualidad · Tres Cantos, España</span></p>
+      <p>
+        <span class="en">Master's thesis on safe reinforcement learning for planning and control. Learning is applied as an additional layer over an existing classical architecture rather than as a replacement, so the guarantees stay where they can be proven. Focus on behaviour under changing and uncertain conditions.</span>
+        <span class="es">Tesis de máster sobre aprendizaje por refuerzo seguro para planificación y control. El aprendizaje se aplica como una capa adicional sobre una arquitectura clásica existente, no como sustituto, de modo que las garantías se mantienen donde se pueden demostrar. Foco en el comportamiento bajo condiciones cambiantes e inciertas.</span>
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>BIConsulting — <span class="en">Junior Technical Consultant</span><span class="es">Consultor técnico junior</span></h3>
+      <p class="when"><span class="en">2024 – 2025 · Valencia, Spain</span><span class="es">2024 – 2025 · Valencia, España</span></p>
+      <ul>
+        <li><span class="en">Analysed client infrastructures to define technical requirements for digital transformation and automation projects.</span><span class="es">Análisis de las infraestructuras de clientes para definir requisitos técnicos en proyectos de transformación digital y automatización.</span></li>
+        <li><span class="en">Authored technical documentation for R&amp;D grants focused on AI, digital twins and robotics.</span><span class="es">Redacción de documentación técnica para ayudas de I+D centradas en IA, gemelos digitales y robótica.</span></li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:40px"><span class="en">Education</span><span class="es">Formación</span></h2>
+
+    <div class="item">
+      <h3>Universitat Politècnica de València (UPV)</h3>
+      <p class="when"><span class="en">Master's degree, Automation and Industrial Computing · Sep 2025 – Jun 2026</span><span class="es">Máster en Automática e Informática Industrial · sep 2025 – jun 2026</span></p>
+    </div>
+
+    <div class="item">
+      <h3>Chalmers University of Technology</h3>
+      <p class="when"><span class="en">Master's degree, Artificial Intelligence · Aug 2023 – Jun 2024</span><span class="es">Máster en Inteligencia Artificial · ago 2023 – jun 2024</span></p>
+    </div>
+
+    <div class="item">
+      <h3>Universitat Politècnica de València (UPV)</h3>
+      <p class="when"><span class="en">Bachelor's degree, Computer Engineering · Sep 2020 – May 2024</span><span class="es">Grado en Ingeniería Informática · sep 2020 – may 2024</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contact">
+  <div class="wrap">
+    <h2><span class="en">Contact</span><span class="es">Contacto</span></h2>
+    <p class="muted"><span class="en">Open to talk about robotics, control and autonomous systems.</span><span class="es">Encantado de hablar sobre robótica, control y sistemas autónomos.</span></p>
+    <div class="buttons">
+      <!-- Cuando tengas el usuario de GitHub o el PDF del CV, añade aquí sus botones -->
+      <a class="btn" href="mailto:francasterw@gmail.com">Email</a>
+      <a class="btn" href="https://github.com/fran-world">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/francasterw">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Francisco Castellano Rodriguez</div>
+</footer>
+
+</body>
+</html>

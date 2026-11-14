@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Walker body transferring its walking policy to a humanoid">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1b3a"/>
+      <stop offset="1" stop-color="#18305f"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a4a8a" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#2a4a8a" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ffc857"/>
+    </marker>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#6c97ff" opacity=".25"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+  <rect y="290" width="640" height="70" fill="url(#floor)"/>
+  <line x1="0" y1="290" x2="640" y2="290" stroke="#6c97ff" stroke-opacity=".6" stroke-width="2"/>
+
+  <!-- Walker: two-legged body -->
+  <g stroke="#3ddbc0" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="150" y1="112" x2="150" y2="190"/>
+    <polyline points="150,190 128,238 138,280"/>
+    <polyline points="150,190 174,236 166,280" opacity=".75"/>
+  </g>
+  <g stroke="#3ddbc0" stroke-width="9" stroke-linecap="round">
+    <line x1="138" y1="284" x2="156" y2="284"/>
+    <line x1="166" y1="284" x2="184" y2="284"/>
+  </g>
+  <g fill="#e9fffb"><circle cx="150" cy="112" r="6"/><circle cx="150" cy="190" r="6"/><circle cx="128" cy="238" r="5"/><circle cx="174" cy="236" r="5"/></g>
+  <text x="150" y="325" text-anchor="middle" font-family="system-ui,Segoe UI,sans-serif" font-size="15" fill="#9fb4e6">Walker</text>
+
+  <!-- Imitation arrow -->
+  <path d="M215 170 C 290 110, 360 110, 425 165" fill="none" stroke="#ffc857" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round" marker-end="url(#arr)"/>
+  <text x="320" y="104" text-anchor="middle" font-family="system-ui,Segoe UI,sans-serif" font-size="14" fill="#ffc857" letter-spacing="1">IMITATE · TRANSFER</text>
+
+  <!-- Humanoid -->
+  <g stroke="#6c97ff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="490" y1="118" x2="490" y2="196"/>
+    <polyline points="490,128 460,172 452,210"/>
+    <polyline points="490,128 520,168 530,206" opacity=".75"/>
+    <polyline points="490,196 472,244 478,280"/>
+    <polyline points="490,196 510,242 504,280" opacity=".75"/>
+  </g>
+  <circle cx="490" cy="92" r="19" fill="#6c97ff"/>
+  <g stroke="#6c97ff" stroke-width="9" stroke-linecap="round">
+    <line x1="472" y1="284" x2="492" y2="284"/>
+    <line x1="500" y1="284" x2="520" y2="284"/>
+  </g>
+  <g fill="#e8efff"><circle cx="490" cy="128" r="6"/><circle cx="490" cy="196" r="6"/><circle cx="472" cy="244" r="5"/><circle cx="510" cy="242" r="5"/></g>
+  <text x="490" y="325" text-anchor="middle" font-family="system-ui,Segoe UI,sans-serif" font-size="15" fill="#9fb4e6">Humanoid</text>
+</svg>
